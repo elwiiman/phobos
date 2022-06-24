@@ -1,20 +1,51 @@
-
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-  }
-
-body, html{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  margin: 0;
 }
 
-.container{
-    height: 100vh;
-    background-image: url('./gifs/7.gif');
-    background-repeat: round;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("./gifs/0.gif");
+  background-repeat: round;
+}
+
+.embead-container {
+  padding: 0 1em;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0);
+  z-index: 1000;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .embead-container {
+    max-width: 320px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .embead-container {
+    max-width: 420px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .embead-container {
+    max-width: 520px;
+  }
 }
