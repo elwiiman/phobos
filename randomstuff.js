@@ -6,7 +6,7 @@ const doSomething = () => {
   const timeArray = new Array(200, 300, 150, 250, 2000, 3000, 1000, 1500);
 
   console.log("execute something");
-  const randomNumber = getRandomNumber(7);
+  const randomNumber = getRandomNumber(12);
   console.log("randomNumber", randomNumber);
   cointainer.style.backgroundImage = `url(./gifs/${randomNumber}.gif)`;
 
